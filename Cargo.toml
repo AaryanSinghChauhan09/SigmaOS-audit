@@ -11,6 +11,8 @@ keywords = ["audit", "compliance", "security"]
 categories = ["os"]
 
 [dependencies]
+toml = "0.8"
+thiserror = "1.0"
 sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
 sigmaos-security = { version = "0.1", path = "../SigmaOS-security" }
 
