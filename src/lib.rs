@@ -4,3 +4,8 @@
 pub mod audit;
 
 pub use audit::AuditManager;
+
+// Component modules
+pub mod config;
+pub mod error;
+pub mod service;
