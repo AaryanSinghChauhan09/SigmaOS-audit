@@ -1,20 +1,10 @@
 [package]
-name = "sigmaos-audit"
+name = "sigmaos_audit"
 version = "0.1.0"
 edition = "2021"
-authors = ["SigmaOS Project"]
-description = "Audit and compliance system"
-license = "GPL-3.0-or-later"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-audit"
-readme = "README.md"
-keywords = ["audit", "compliance", "security"]
-categories = ["os"]
+license = "MIT"
+description = "SigmaOS audit component inspired by Linux Mint / Omarchy / Arch Linux."
 
-[dependencies]
-toml = "0.8"
-thiserror = "1.0"
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
-sigmaos-security = { version = "0.1", path = "../SigmaOS-security" }
-
-[profile.release]
-opt-level = 3
+[lib]
+name = "sigmaos_audit"
+path = "src/lib.rs"
