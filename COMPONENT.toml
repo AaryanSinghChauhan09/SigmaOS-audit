@@ -3,12 +3,12 @@ name = "SigmaOS-audit"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "audit component"
+description = "An evolving no_std Rust library for audit-related data structures and policy prototypes. The crate exposes AuditManager; the audit module defines event and severity types and includes memory-audit and process-pledge code."
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
